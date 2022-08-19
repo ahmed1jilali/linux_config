@@ -1,0 +1,17 @@
+{
+	"manifest_version":				2,
+	"name":							"Scroll_J_K",
+	"version":						"1.0",
+
+	"description":					"Scroll window with J and K keys.",
+
+	"icons":{
+	},
+
+	"content_scripts":				[
+		{
+			"matches":					["<all_urls>"],
+			"js":						["app.js"]
+		}
+	]
+}

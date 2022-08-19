@@ -1,0 +1,55 @@
+set ve+=onemore
+inoremap <C-l> <Esc>
+
+set number
+syntax on
+
+set tabstop=2
+set shiftwidth =2
+
+set smartindent
+set autoindent
+
+set noswapfile
+
+syntax on
+filetype plugin indent on
+
+
+" Execute 'lnoremap x X' and 'lnoremap X x' for each letter a-z.
+" Press Ctrl-
+for c in range(char2nr('A'), char2nr('Z'))
+  execute 'lnoremap ' . nr2char(c+32) . ' ' . nr2char(c)
+  execute 'lnoremap ' . nr2char(c) . ' ' . nr2char(c+32)
+endfor
+
+" Kill the capslock when leaving insert mode. __________________
+autocmd InsertLeave * set iminsert=0
+
+" pathogen _____________________________________________________
+execute pathogen#infect()
+
+" Highlighting the current line number _________________________
+hi clear CursorLine
+augroup CLClear
+    autocmd! ColorScheme * hi clear CursorLine
+augroup END
+
+hi CursorLineNR cterm=bold
+augroup CLNRSet
+    autocmd! ColorScheme * hi CursorLineNR cterm=bold
+augroup END
+
+highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+set cursorline
+
+"highlight CursorLineNr cterm=NONE ctermbg=15 ctermfg=8 gui=NONE guibg=#ffffff guifg=#d70000
+
+
+" seting vim-plug which manages vim plugins
+call plug#begin('~/.vim/plugged')
+Plug 'evanleck/vim-svelte'
+call plug#end()
+
+
+
