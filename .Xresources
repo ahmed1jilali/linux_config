@@ -1,0 +1,66 @@
+!if __has_includs(".extend.Xresources")
+! new_theme
+
+! special
+*.foreground:   #f8f8f2
+*.background:   #282a36
+*.cursorColor:  #f8f8f2
+
+! black
+*.color0:       #000000
+*.color8:       #44475a
+
+! red
+*.color1:       #ff5555
+*.color9:       #ff5555
+
+! green
+*.color2:       #50fa7b
+*.color10:      #50fa7b
+
+! yellow
+*.color3:       #f1fa8c
+*.color11:      #f1fa8c
+
+! blue
+*.color4:       #bd93f9
+*.color12:      #bd93f9
+
+! magenta
+*.color5:       #ff79c6
+*.color13:      #ff79c6
+
+! cyan
+*.color6:       #8be9fd
+*.color14:      #8be9fd
+
+! white
+*.color7:       #bbbbbb
+*.color15:      #ffffff
+
+
+!___MyConfig________________________________________________________________
+
+! Font
+URxvt.font:xft:Hack Nerd Font Mono:size=11
+URxvt.boldFont:xft:Hack Nerd Font Mono:size=11
+
+! Space chars lines
+URxvt.letterSpace: -1
+URxvt.lineSpace: -2
+URxvt.geometry: 92x24
+
+! Cursor
+URxvt.curosrBlink: 1
+URxvt.cursorColor: #647b83
+URxvt.curosrUnderline: 1
+URxvt.cursorShape: |
+
+! Pointer
+URxvt.pointerBlank: true
+
+! ScrollBar
+URxvt.scrollBar: false
+
+!URxvt.internalBorder: 6
+!internalBorder
