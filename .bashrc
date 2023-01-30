@@ -11,4 +11,4 @@ PS1='[\u@\h \W]\$ '
 
 export PATH="$HOME/.local/bin/":$PATH
 # alias i3sg='$HOME/.My_scripts/i3sg.sh'
-alias i3sg='/home/black/.My_scripts/i3sg.sh'
+alias i3sg='~/.My_scripts/i3sg.sh'
