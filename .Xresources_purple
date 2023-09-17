@@ -2,40 +2,40 @@
 ! new_theme
 
 ! special
-*.foreground:   #bbbbbb
-*.background:   #000000
-*.cursorColor:  #ffffff
+*.foreground:   #f8f8f2
+*.background:   #282a36
+*.cursorColor:  #f8f8f2
 
 ! black
 *.color0:       #000000
-*.color8:       #ffffff
+*.color8:       #44475a
 
 ! red
-*.color1:       #ffffff
-*.color9:       #ffffff
+*.color1:       #ff5555
+*.color9:       #ff5555
 
 ! green
-*.color2:       #aaaaaa
-*.color10:      #aaaaaa
+*.color2:       #50fa7b
+*.color10:      #50fa7b
 
 ! yellow
-*.color3:       #ffffff
-*.color11:      #ffffff
+*.color3:       #f1fa8c
+*.color11:      #f1fa8c
 
 ! blue
-*.color4:       #999999
-*.color12:      #999999
+*.color4:       #bd93f9
+*.color12:      #bd93f9
 
 ! magenta
-*.color5:       #ffffff
-*.color13:      #ffffff
+*.color5:       #ff79c6
+*.color13:      #ff79c6
 
 ! cyan
-*.color6:       #ffffff
-*.color14:      #ffffff
+*.color6:       #8be9fd
+*.color14:      #8be9fd
 
 ! white
-*.color7:       #000000
+*.color7:       #bbbbbb
 *.color15:      #ffffff
 
 
