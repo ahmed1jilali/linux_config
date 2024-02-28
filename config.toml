@@ -1,0 +1,60 @@
+# theme = "tokyonight_storm"
+# theme = "serika-dark"
+# theme = "catppuccin_macchiato"
+# theme = "catppuccin_mocha"
+# theme = "base16_default"
+# theme = "costume_black_and_white"
+theme = "github_dark_high_contrast"
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
+"C-l" = ["collapse_selection", "keep_primary_selection"]
+"C-q" = [":bc"]
+# "A-C-c" = [":clipboard-yank"]
+
+[keys.insert]
+"C-l" = ["normal_mode"]
+
+[editor]
+line-number = "relative"
+true-color = true
+mouse = false
+bufferline = "multiple"
+auto-format = true
+
+#___auto_complete_config
+auto-completion = true
+completion-trigger-len = 2
+idle-timeout = 0
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "|"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+
+[editor.indent-guides]
+render = true
+
+
+# [editor.whitespace.render]
+# tab = "all"
+
+
+# [editor.whitespace.characters]
+# tab = "→"
+# tabpad = "·"
+
+
